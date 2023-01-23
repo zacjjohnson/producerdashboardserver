@@ -26,12 +26,7 @@ module.exports = (app) => {
 
 
   // controls a very specific header to pass headers from the frontend
-  app.use(
-    
-    cors({
-      origin: ['https://producer-frontend.vercel.app/'],
-    })
-  );
+  app.use(cors());
 
   // In development environment the app logs
   app.use(logger("dev"));
